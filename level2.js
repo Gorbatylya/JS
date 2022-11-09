@@ -20,7 +20,7 @@
 //         console.log(height)
 //     }
 //     else {
-//         (console.log(width))
+//         console.log(width)
 //     }
 // }
 // max ()
@@ -35,11 +35,7 @@
 
 
 //Task4
-// let a = 'key';
-// let b = 'documents';
-// let c = 'pen';
-// let d = 'apple';
-// let e = 'orange';
+//Нам надо идти на работу, но нужно проверить все ли мы взяли или нет? Нам точно нужны ключи документы и ручка, но из еды нам надо яблоко или апельсин. Для решения этой задачи нам помогут логические операторы || &&
 
 // let key = true;
 // let documents = true;
@@ -47,11 +43,12 @@
 // let apple = false;
 // let orange = true;
 
-// alert( true || false );   // true
-// alert( false || true );  // true
-// alert( true || false );  // true
-// alert( false || false ); // false
+// let shouldGoToWork = '';
 
+// if((key && documents && pen && (apple || orange)) == true){
+//     shouldGoToWork = "все взяли"
+// }
+// else {shouldGoToWork = "что-то забыли"}
 
 // console.log (shouldGoToWork);
 
@@ -127,32 +124,27 @@
 
 
 // ADVANCED
-// Task 1
+// Task 1 - не очень(
 // let name = "пОлИнА нАбЕрЕжНаЯ";
-// alert ("Привет, " + name.toLowerCase())
+// let result = '';
 
-// const str = 'пОлИнА нАбЕрЕжНаЯ';
-// const arr = str.split(' ');
-// for (let i = 0; i < arr.length; i++) {
-//  arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);}
-// const str2 = arr.join(' ');
-// console.log(str2);
-// let name = "пОлИнА нАбЕрЕжНаЯ";
-// let a = name.toLowerCase();
-// a.codeWord[0].toUpperCase();
-// console.log (a)
 
+// for (let i=1;i<7;i++){
+//     result = name.charAt(0).toUpperCase() + name.charAt(i).toLowerCase() + name.charAt(7).toUpperCase() + name.slice(8).toLowerCase()
+
+
+// console.log ("Привет, " + result)
 
 //Task 2
-// let x = prompt('Введите число','');
-// let a = prompt('Сколько отнять?','');
-// let b = prompt('Сколько прибавить?','');
-// let c = prompt('На сколько умножить?','');
-// let d = prompt('На сколько разделить?','');
+// let x = +prompt('Введите число','');
+// let a = +prompt('Сколько отнять?','');
+// let b = +prompt('Сколько прибавить?','');
+// let c = +prompt('На сколько умножить?','');
+// let d = +prompt('На сколько разделить?','');
 
 // let form = (((x-a) + b) * c) / d;
 
-// alert ('((('+ x + '-' + a + ') + ' + b + ') * ' + c + ') / ' + d + '=' + form);
+// alert ((`(((${x}-${a}) + ${b}) * ${c}) / ${d} = ${form}`));
 
 
 //Task 3
